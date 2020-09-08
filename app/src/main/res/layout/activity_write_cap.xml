@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteCapActivity">
+
+
+    <LinearLayout
+        android:id="@+id/logwin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ogin_shape"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="70dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/capWrite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Write Caption" />
+
+        <EditText
+            android:id="@+id/capAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Author"></EditText>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/submitCap"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="Submit"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/logwin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Captions"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
